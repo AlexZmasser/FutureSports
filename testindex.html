@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sporting Club Web App</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main >
+    <div id="home">
+        <h1>Welcome to [Sporting Club Name]</h1>
+        <form id="search-form">
+            <input type="text" id="search-bar" placeholder="Search...">
+            <button type="submit">Search</button>
+        </form>
+
+        <form id="register-form">
+            <h2>Register for Updates</h2>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div class="carousel">
+            <img src="image1.jpg" alt="Slide 1">
+            <img src="image2.jpg" alt="Slide 2">
+            <img src="image3.jpg" alt="Slide 3">
+        </div>
+
+        <div>
+            <h2>Club Highlights</h2>
+            <video width="600" controls>
+                <source src="highlight.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Player</th>
+                    <th>Position</th>
+                    <th>Stats</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Player 1</td>
+                    <td>Forward</td>
+                    <td>15 Goals</td>
+                </tr>
+                <tr>
+                    <td>Player 2</td>
+                    <td>Midfielder</td>
+                    <td>10 Assists</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div>
+            <h2>External Widget</h2>
+            <iframe src="https://www.externalwidget.com" width="100%" height="600" title="External Widget"></iframe>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</main>
+
+
+
+</body>
+<footer>
+    <div class="container">
+        <p>&copy; 2024 [Sporting Club Name]. All rights reserved.</p>
+        <a href="#privacy">Privacy Policy</a> | 
+        <a href="#terms">Terms and Conditions</a> | 
+        <a href="#contact">Contact Us</a>
+    </div>
+</footer>
+</html>
