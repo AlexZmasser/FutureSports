@@ -1,10 +1,12 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
+import 'bootstrap/dist/css/bootstrap.css'; 
+import Container from 'react-bootstrap/Container'; 
+import CarouselImage from './images/';
 
 function Header() {
   return (
     <div className="container">
-      <img src="src/images/Logo.png" alt="Logo" height="100" style={{ float: "left" }} />
+      <img src={require('./images/Logo.png') } alt="" height="100" style={{ float: "left" }} />
       <h1>Welcome to Box Hill Labradors</h1>
     </div>
   );
