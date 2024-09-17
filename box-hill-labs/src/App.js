@@ -1,7 +1,10 @@
 import React from "react";
+import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.css'; 
 import Container from 'react-bootstrap/Container'; 
-import CarouselImage from './images/';
+import Image_1 from './images/image_1.jpg';
+import Image_2 from './images/image_2.jpg';
+import Image_3 from './images/image_3.jpg';
 
 function Header() {
   return (
@@ -51,45 +54,33 @@ function Navbar() {
   );
 }
 
-function Carousel() {
+function Carouselmain() {
   return (
-    <div className="container">
-      <div id="carouselExampleIndicators" className="carousel slide" data-ride="carousel">
-        <ol className="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" className="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div className="carousel-inner" style={{ width: "100%", height: "700px !important" }}>
-          <div className="carousel-item active">
-            <img className="d-block w-100" src="src/images/image_1.jpg" alt="First slide" />
-          </div>
-          <div className="carousel-item">
-            <img className="d-block w-100" src="src/images/image_2.jpg" alt="Second slide" />
-          </div>
-          <div className="carousel-item">
-            <img className="d-block w-100" src="src/images/image_3.jpg" alt="Third slide" />
-          </div>
-        </div>
-        <a className="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="sr-only">Previous</span>
-        </a>
-        <a className="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="sr-only">Next</span>
-        </a>
-      </div>
-    </div>
+    <Container>
+    <Carousel fade>
+      <Carousel.Item>
+        <img src={Image_1} alt="First slide" className="d-block w-100" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img src={Image_2} alt="Second slide" className="d-block w-100" />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img src={Image_3} alt="Third slide" className="d-block w-100" />
+      </Carousel.Item>
+    </Carousel>
+    </Container>
   );
 }
+
+
+
 
 function App() {
   return (
     <div>
       <Header />
       <Navbar />
-      <Carousel />
+      <Carouselmain />
     </div>
   );
 }
