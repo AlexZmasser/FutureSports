@@ -5,6 +5,9 @@ import Container from 'react-bootstrap/Container';
 import Image_1 from './images/image_1.jpg';
 import Image_2 from './images/image_2.jpg';
 import Image_3 from './images/image_3.jpg';
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import eventsData from './JSON/events.json';
 
 function Header() {
   return (
@@ -87,39 +90,43 @@ function Carouselmain() {
   );
 }
 
-// The component to fetch and display event data in a carousel
-function EventCarousel() {
-  // State to store the event data
-  const [events, setEvents] = useState([]);
+function chunkArray(array, chunkSize) {
+  const results = [];
+  for (let i = 0; i < array.length; i += chunkSize) {
+    results.push(array.slice(i, i + chunkSize));
+  }
+  return results;
+}
 
-  // Fetch event data from the JSON file when the component mounts
-  useEffect(() => {
-    fetch("/path/to/events.json") // Update with the correct path to your JSON file
-      .then(response => response.json())
-      .then(data => setEvents(data))
-      .catch(error => console.error("Error fetching events:", error));
-  }, []);
+function EventCarousel() {
+  // Group events into chunks of 3 to display 3 per carousel item
+  const eventChunks = chunkArray(eventsData, 3);
 
   return (
     <Container>
-      <Carousel fade style={{ width: "100%", height: "400px" }}>
-        {events.map((event, index) => (
+      <Carousel>
+        {eventChunks.map((chunk, index) => (
           <Carousel.Item key={index}>
-            <div className="d-block w-100" style={{ backgroundColor: '#f8f9fa', padding: '20px', height: '100%' }}>
-              <h3>{event.eventName}</h3>
-              <p><strong>Date:</strong> {event.date}</p>
-              <p><strong>Start Time:</strong> {event.startTime}</p>
-              <p><strong>End Time:</strong> {event.endTime}</p>
-              <p><strong>Location:</strong> {event.location}</p>
-              <p><strong>Description:</strong> {event.description}</p>
-            </div>
+            <Row>
+              {chunk.map((event, eventIndex) => (
+                <Col md={4} key={eventIndex}>
+                  <div className="event-item p-3" style={{ backgroundColor: '#f8f9fa', border: '1px solid #ddd', borderRadius: '5px' }}>
+                    <h4>{event.eventName}</h4>
+                    <p><strong>Date:</strong> {event.date}</p>
+                    <p><strong>Start Time:</strong> {event.startTime}</p>
+                    <p><strong>End Time:</strong> {event.endTime}</p>
+                    <p><strong>Location:</strong> {event.location}</p>
+                    <p>{event.description}</p>
+                  </div>
+                </Col>
+              ))}
+            </Row>
           </Carousel.Item>
         ))}
       </Carousel>
     </Container>
   );
 }
-
 
 
 function App() {
