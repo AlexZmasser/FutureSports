@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.css'; 
 import Container from 'react-bootstrap/Container'; 
@@ -57,21 +57,68 @@ function Navbar() {
 function Carouselmain() {
   return (
     <Container>
-    <Carousel fade>
-      <Carousel.Item>
-        <img src={Image_1} alt="First slide" className="d-block w-100" />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img src={Image_2} alt="Second slide" className="d-block w-100" />
-      </Carousel.Item>
-      <Carousel.Item>
-        <img src={Image_3} alt="Third slide" className="d-block w-100" />
-      </Carousel.Item>
-    </Carousel>
+      <Carousel fade style={{ width: '100%', height: '700px' }}>
+        <Carousel.Item>
+          <img 
+            src={Image_1} 
+            alt="First slide" 
+            className="d-block w-100" 
+            style={{ width: '100%', height: '700px', objectFit: 'cover' }} 
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img 
+            src={Image_2} 
+            alt="Second slide" 
+            className="d-block w-100" 
+            style={{ width: '100%', height: '700px', objectFit: 'cover' }} 
+          />
+        </Carousel.Item>
+        <Carousel.Item>
+          <img 
+            src={Image_3} 
+            alt="Third slide" 
+            className="d-block w-100" 
+            style={{ width: '100%', height: '700px', objectFit: 'cover' }} 
+          />
+        </Carousel.Item>
+      </Carousel>
     </Container>
   );
 }
 
+// The component to fetch and display event data in a carousel
+function EventCarousel() {
+  // State to store the event data
+  const [events, setEvents] = useState([]);
+
+  // Fetch event data from the JSON file when the component mounts
+  useEffect(() => {
+    fetch("/path/to/events.json") // Update with the correct path to your JSON file
+      .then(response => response.json())
+      .then(data => setEvents(data))
+      .catch(error => console.error("Error fetching events:", error));
+  }, []);
+
+  return (
+    <Container>
+      <Carousel fade style={{ width: "100%", height: "400px" }}>
+        {events.map((event, index) => (
+          <Carousel.Item key={index}>
+            <div className="d-block w-100" style={{ backgroundColor: '#f8f9fa', padding: '20px', height: '100%' }}>
+              <h3>{event.eventName}</h3>
+              <p><strong>Date:</strong> {event.date}</p>
+              <p><strong>Start Time:</strong> {event.startTime}</p>
+              <p><strong>End Time:</strong> {event.endTime}</p>
+              <p><strong>Location:</strong> {event.location}</p>
+              <p><strong>Description:</strong> {event.description}</p>
+            </div>
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    </Container>
+  );
+}
 
 
 
@@ -81,6 +128,7 @@ function App() {
       <Header />
       <Navbar />
       <Carouselmain />
+      < EventCarousel />
     </div>
   );
 }
