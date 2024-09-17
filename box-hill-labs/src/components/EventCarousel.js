@@ -18,6 +18,7 @@ function EventCarousel() {
 
   return (
     <Container>
+      <h2>Events</h2>
       <Carousel>
         {eventChunks.map((chunk, index) => (
           <Carousel.Item key={index}>
