@@ -1,0 +1,183 @@
+[
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "position": "Pitcher",
+      "jerseyNumber": 34,
+      "height": "6'2\"",
+      "battingAverage": 0.278,
+      "hometown": "New York, NY"
+    },
+    {
+      "firstName": "Mike",
+      "lastName": "Smith",
+      "position": "Catcher",
+      "jerseyNumber": 12,
+      "height": "6'1\"",
+      "battingAverage": 0.295,
+      "hometown": "Los Angeles, CA"
+    },
+    {
+      "firstName": "James",
+      "lastName": "Brown",
+      "position": "Outfielder",
+      "jerseyNumber": 8,
+      "height": "5'11\"",
+      "battingAverage": 0.310,
+      "hometown": "Chicago, IL"
+    },
+    {
+      "firstName": "Tom",
+      "lastName": "Holland",
+      "position": "Shortstop",
+      "jerseyNumber": 14,
+      "height": "6'0\"",
+      "battingAverage": 0.288,
+      "hometown": "Dallas, TX"
+    },
+    {
+      "firstName": "Andrew",
+      "lastName": "Garfield",
+      "position": "First Baseman",
+      "jerseyNumber": 19,
+      "height": "6'3\"",
+      "battingAverage": 0.270,
+      "hometown": "Miami, FL"
+    },
+    {
+      "firstName": "Chris",
+      "lastName": "Evans",
+      "position": "Centerfielder",
+      "jerseyNumber": 7,
+      "height": "6'4\"",
+      "battingAverage": 0.300,
+      "hometown": "Boston, MA"
+    },
+    {
+      "firstName": "Steve",
+      "lastName": "Rogers",
+      "position": "Third Baseman",
+      "jerseyNumber": 27,
+      "height": "6'1\"",
+      "battingAverage": 0.289,
+      "hometown": "Chicago, IL"
+    },
+    {
+      "firstName": "Peter",
+      "lastName": "Parker",
+      "position": "Second Baseman",
+      "jerseyNumber": 15,
+      "height": "5'10\"",
+      "battingAverage": 0.320,
+      "hometown": "Queens, NY"
+    },
+    {
+      "firstName": "Bruce",
+      "lastName": "Banner",
+      "position": "Relief Pitcher",
+      "jerseyNumber": 23,
+      "height": "6'5\"",
+      "battingAverage": 0.250,
+      "hometown": "Newark, NJ"
+    },
+    {
+      "firstName": "Tony",
+      "lastName": "Stark",
+      "position": "Closer",
+      "jerseyNumber": 44,
+      "height": "6'1\"",
+      "battingAverage": 0.310,
+      "hometown": "Malibu, CA"
+    },
+    {
+      "firstName": "Natasha",
+      "lastName": "Romanoff",
+      "position": "Left Fielder",
+      "jerseyNumber": 22,
+      "height": "5'7\"",
+      "battingAverage": 0.312,
+      "hometown": "Moscow, RU"
+    },
+    {
+      "firstName": "Clint",
+      "lastName": "Barton",
+      "position": "Right Fielder",
+      "jerseyNumber": 9,
+      "height": "6'0\"",
+      "battingAverage": 0.285,
+      "hometown": "Des Moines, IA"
+    },
+    {
+      "firstName": "Wade",
+      "lastName": "Wilson",
+      "position": "Designated Hitter",
+      "jerseyNumber": 69,
+      "height": "6'2\"",
+      "battingAverage": 0.333,
+      "hometown": "Vancouver, BC"
+    },
+    {
+      "firstName": "Logan",
+      "lastName": "Howlett",
+      "position": "Utility",
+      "jerseyNumber": 45,
+      "height": "5'8\"",
+      "battingAverage": 0.292,
+      "hometown": "Alberta, CA"
+    },
+    {
+      "firstName": "Charles",
+      "lastName": "Xavier",
+      "position": "Coach",
+      "jerseyNumber": null,
+      "height": "6'0\"",
+      "battingAverage": null,
+      "hometown": "Westchester, NY"
+    },
+    {
+      "firstName": "Scott",
+      "lastName": "Summers",
+      "position": "Bench",
+      "jerseyNumber": 33,
+      "height": "6'3\"",
+      "battingAverage": 0.255,
+      "hometown": "Anchorage, AK"
+    },
+    {
+      "firstName": "Jean",
+      "lastName": "Grey",
+      "position": "Bench",
+      "jerseyNumber": 12,
+      "height": "5'9\"",
+      "battingAverage": 0.280,
+      "hometown": "Phoenix, AZ"
+    },
+    {
+      "firstName": "Erik",
+      "lastName": "Lehnsherr",
+      "position": "Bench",
+      "jerseyNumber": 77,
+      "height": "6'2\"",
+      "battingAverage": 0.240,
+      "hometown": "Berlin, DE"
+    },
+    {
+      "firstName": "Raven",
+      "lastName": "Darkholme",
+      "position": "Bench",
+      "jerseyNumber": 8,
+      "height": "5'8\"",
+      "battingAverage": 0.300,
+      "hometown": "Salem Center, NY"
+    },
+    {
+      "firstName": "Remy",
+      "lastName": "LeBeau",
+      "position": "Shortstop",
+      "jerseyNumber": 11,
+      "height": "6'1\"",
+      "battingAverage": 0.315,
+      "hometown": "New Orleans, LA"
+    }
+  ]
+  
