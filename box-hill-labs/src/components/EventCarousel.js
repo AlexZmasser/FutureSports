@@ -17,7 +17,7 @@ function EventCarousel() {
   const eventChunks = chunkArray(eventsData, 3);
 
   return (
-    <Container>
+    <Container id="Events" >
       <h2>Events</h2>
       <Carousel>
         {eventChunks.map((chunk, index) => (
