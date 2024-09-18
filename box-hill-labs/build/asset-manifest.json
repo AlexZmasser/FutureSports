@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.6e3a910a.css",
+    "main.js": "/static/js/main.bc0a6b26.js",
+    "static/js/453.2a61ac5e.chunk.js": "/static/js/453.2a61ac5e.chunk.js",
+    "static/media/baseball-player-slides-into-home-plate-slow-motion-SBV-347577896-preview.mp4": "/static/media/baseball-player-slides-into-home-plate-slow-motion-SBV-347577896-preview.f89a818b4789dfcaa153.mp4",
+    "static/media/image_1.jpg": "/static/media/image_1.316db355277c85815131.jpg",
+    "static/media/image_3.jpg": "/static/media/image_3.07c93c1cbcb6085f646d.jpg",
+    "static/media/image_2.jpg": "/static/media/image_2.71b2df53fa7152f487ad.jpg",
+    "static/media/Logo.png": "/static/media/Logo.89a9bb05ceaa90389bbf.png",
+    "index.html": "/index.html",
+    "main.6e3a910a.css.map": "/static/css/main.6e3a910a.css.map",
+    "main.bc0a6b26.js.map": "/static/js/main.bc0a6b26.js.map",
+    "453.2a61ac5e.chunk.js.map": "/static/js/453.2a61ac5e.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6e3a910a.css",
+    "static/js/main.bc0a6b26.js"
+  ]
+}
