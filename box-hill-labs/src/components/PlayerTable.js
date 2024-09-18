@@ -6,7 +6,7 @@ function PlayerTable() {
   return (
     <Container id="Players">
       <h2 className="text-center">Players</h2>
-      <div style={{ maxHeight: '400px', overflowY: 'scroll' }}>
+      <div style={{ maxHeight: '400px', overflowY: 'scroll', marginBottom: ' 50px' }}>
         <Table bordered hover responsive>
           <thead>
             <tr>
